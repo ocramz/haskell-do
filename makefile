@@ -1,5 +1,11 @@
 IMAGE_NAME:=theam/haskell-do
 
+ghcjs:
+	stack setup --stack-yaml=client-stack.yaml
+
+main:
+	stack Build.hs -a
+
 docker:
 	docker build -t ${IMAGE_NAME} src/docker/
 

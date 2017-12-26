@@ -18,7 +18,8 @@ packages:
     git: https://github.com/transient-haskell/axiom
     commit: ee39119817ff05ed7385ced4c8c0e7ee0ed7f682
 
-extra-deps: []
+extra-deps:
+- miso-0.10.0.0  
 
 flags: {}
 
