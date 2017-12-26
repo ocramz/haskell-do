@@ -23,11 +23,15 @@ dependencies:
   - directory
   - filepath
   - system-fileio
+  - miso
 
 ghc-options:
   - -Wall
-  - -Werror
-  - -fprint-potential-instances
+  - -Wno-unused-imports
+  - -Wno-unused-matches
+  - -Wno-unused-top-binds
+  # - -Werror
+  # - -fprint-potential-instances
 
 when:
   - condition: impl(ghcjs)
